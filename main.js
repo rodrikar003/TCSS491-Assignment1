@@ -85,14 +85,14 @@ Girl.prototype.update = function () {
      if (this.jumping) {
         this.animation.frameDuration = 0.089;
         this.x += 3;
-        this.height += 2;
+        this.height += 1.3;
         this.y = this.ground - this.height;
         
       
     } else {
         this.x += 10;
         this.y = (this.y === this.ground) ? this.ground 
-                : this.y += 5;
+                : this.y += 3;
         
     }
     Entity.prototype.update.call(this);
